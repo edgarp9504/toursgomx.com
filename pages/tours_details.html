@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style_details.css">
+    <script src="https://kit.fontawesome.com/423d5526c9.js" crossorigin="anonymous"></script>
+    <title>Toursgomx | Información tours</title>
+</head>
+<body>
+    <div>
+        <!-- NAVBAR TOP  -->
+        <div class="main_div_contact">
+            <p> +(52) 9983253195 </p>
+            <div class="icon__social">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+        </div>
+        
+
+        <!-- NAVBAR  -->
+        <div class="main__div__nav">
+
+            <div class="logo__img">
+            </div>
+
+            <nav class="main__nav" id="main__nav">
+                <ul class="nav_items">
+                    <li class="nav__link"><a href="../home.html"> Inicio</a></li>
+                    <li class="nav__link"><a href="../pages/tours.html">Tours</a></li>
+                    <li class="nav__link"><a href="../pages/contacus.html">Contactanos</a></li>
+                </ul>
+                
+                <div class="submain_left">
+                    <div class="loggin_buttom">
+                        <i class="fa-regular fa-user fa-lg"></i>
+                    </div>
+                    <div class="contenedor_lenguaje">
+                        <select> 
+                            <option> Español </option>
+                            <option> Ingles </option>
+                        </select> </p>
+                    </div>
+                </div>
+            </nav>
+            <DIV class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </DIV>
+        </div>             
+    </div>
+    
+    <section class="background__section">
+        <div class="background__img">
+            <!-- <h1> Toursgomx</h1> -->
+            <img src="../img/chichen.jpg" alt="">  
+        </div>
+    </section>
+
+    <section>
+        
+
+        <div class="main__tour__information">
+            <div class="information__tour">
+                <h1> Chichen Itzá Clásico</h1>
+
+                <div class="description__tour">
+                    <p class="info__text__300">¿Conoces las maravillas del mundo? Chichen Itzá es una de las 7 grandes maravillas, y te invitamos a sumergirte en esta increíble aventura para descubrir todo lo que tiene para ofrecer, ¡y mucho más!
+
+                       <br><br>  Además de explorar este impresionante sitio arqueológico, también tendrás la oportunidad de visitar un pueblo mágico en Yucatán, degustar comida auténtica en un hermoso restaurante con temática maya, y relajarte en un impresionante cenote. Todo esto mientras disfrutas de un viaje libre de estrés, con todo organizado para ti.
+                        
+                       <br><br> No te quedes con las ganas de experimentar esta maravillosa aventura. ¡Reserva hoy mismo y comienza a descubrir todo lo que Yucatán tiene para ofrecer!</p>
+
+                </div>
+
+                
+            </div>
+
+            <!-- EMPIEZA EL DETALLE DE PAGO -->
+            <div class="card__precio" id="card__precio">
+                <div class="title__arrow" id="title__arrow">
+                    <p class="info_title">$1600 MXN</p>
+                    <div class="arr" id="arr"></div>
+                </div>
+                <div class="container__fecha">
+                    <p>Fecha</p> <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31">
+                </div>
+
+                <div class="card__select"> 
+                    <span>Idioma</span>
+                    <div class="selector__people">
+                        <div class="container_span" id="container__lenguage">
+                            <span > Selecciona Idioma</span> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="container__selector" id="selector_show_lenguaje">
+                            <div class="opciones__schedule">
+                                <span class="nav__link">Español</span>
+                                <span class="nav__link">English</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card__select"> 
+                    <span>Hora</span>
+                    <div class="selector__people">
+                        <div class="container_span" id="container__schedule">
+                            <span> Selecciona Horario</span> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="container__selector" id="selector_show_schedule">
+                            <div class="opciones__schedule">
+                                <span class="nav__link">7 am</span>
+                                <span class="nav__link">10 am</span>
+                                <span class="nav__link">12 pm</span>
+                                <span class="nav__link">7 am</span>
+                                <span class="nav__link">10 am</span>
+                                <span class="nav__link">12 pm</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card__select">
+                    <span> Personas</span>
+                    <div class="selector__people" >
+                        <!-- CONTAINER SELECT | SELECCIONAR PERSONAS -->
+                        <div class="container_span" id="container__selector">
+                            <span> Seleccionar personas</span> 
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+
+                        <!-- OPCION FLOAT -->
+                        <div class="container__selector" id="selector_show">
+                            <div class="opciones">
+                                <span>Adulto</span>
+                                <div class="selector_people_dinamic">
+                                    <button> + </button>
+                                    <span> 0 </span>
+                                    <button> -</button>
+                                </div>
+                            </div>
+                            <div class="opciones">
+                                <span>Niños</span>
+                                <div class="selector_people_dinamic">
+                                    <button> + </button>
+                                    <span> 0 </span>
+                                    <button> -</button>
+                                </div>
+                            </div>
+                            <div class="opciones">
+                                <span>Infantil</span>
+                                <div class="selector_people_dinamic">
+                                    <button> + </button>
+                                    <span> 0 </span>
+                                    <button> -</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./cart.htm"> <button>Reservar Ahora</button></a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="main__container__information">
+
+        
+            <h2> Information </h2>
+
+            <!-- INICIO DE TABS  -->
+            <div class="contenedor">
+                <ul class="ul">
+                    <li class="li activo">Incluye</li>
+                    <li class="li">No Incluye</li>
+                    <li class="li">Lugares conocer</li>
+                </ul>
+        
+                <div class="subcontenedor">
+                    <div class="bloque activo"> 
+                        <div class="card__includes">
+                            <div class="container__information">
+                                <i class="fa-solid fa-utensils fa-lg"></i>
+                                <p class="info__text__300">Comida Buffet</p>
+                            </div>
+                            <div class="container__information">
+                                <i class="fa-solid fa-car fa-lg"></i>
+                                <p class="info__text__300">Transportación redonda</p>
+                            </div>
+            
+                            <div class="container__information">
+                                <i class="fa-solid fa-ticket fa-lg"></i>
+                                <p class="info__text__300">Entradas</p>
+                            </div>
+            
+                            <div class="container__information">
+                                <i class="fa-solid fa-head-side-cough fa-lg"></i>
+                                <p class="info__text__300">Guia Bilingue</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="bloque">
+                        <div class="card__includes">
+                            <div class="container__information">
+                                <i class="fa-solid fa-glass-water"></i>
+                                <p class="info__text__300">Bebidas Restaurante</p>
+                            </div>
+                            <div class="container__information">
+                                <img src="../img/chaleco-salvavidas.png" alt="">
+                                <p class="info__text__300">Chaleco Salvavidas</p>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="bloque">
+                        <div class="Places">
+                            <p class="info_title">Chichen Itzá, Yucatán</p>
+                            <p class="info_title">Valladolid, Yucatán</p>
+                            <p class="info_title">Restaurante </p>
+                            <p class="info_title"> Cenote </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="main__schedule">
+            <h2> Itinerario </h2>
+            <p class="info__text__300">Pick Ups de Cortesía en transportación compartida (Van o Autobús).
+                Vamos a tu hotel por ti o nos encontramos contigo en uno de nuestros puntos de
+                reunión más cercanos a tu ubicación.</p>
+            <br><p class="info__text__300">Llegada a la Villa Maya, aquí realizaremos las siguientes actividades:
+                Ceremonia de sanación impartida por el Chaman Maya.
+                Visita a la tienda de artesanías. En donde encontrarás auténticas obras de arte
+                elaboradas por los artesanos de la zona.
+                Degustación de Tequilas artesanales de diferentes sabores producto 100% original
+                </p>
+            <br> <p class="info__text__300">2.30 Hrs de Visita al sitio arqueológico de Chichén Itzá. Conocerás cómo vivían los
+                Mayas de aquel entonces, la historia de las edificaciones más importantes de esa
+                grandiosa ciudad incluyendo sus mitos, leyendas y mucha cultura. Servicio guiado
+                (en inglés o español) y después tendrás tiempo para caminar por tu cuenta en los
+                alrededores y tomar las mejores fotos de tu Tour a Chichen Itzá.</p>
+            <br><p class="info__text__300">50 minutos de visita a una asombrosa hacienda colonial en su interior se encuentra
+                una de las más hermosas formaciones naturales de la región, el “Cenote Saamal”
+                en donde podrás nadar, tomar fotos y pasar un momento formidable. (No incluye chaleco ni casilleso).</p>
+            <br><p class="info__text__300">Breve visita a la plaza del centro de la ciudad de Valladolid, Yucatán. Aquí podrás
+                tener una pequeña probadita de lo que esta hermosa ciudad ofrece. En el centro se
+                encuentra el hermoso parque principal en donde podrás encontrar pequeñas
+                tiendas de bocadillos, antojos. Pregunta a tu guía por los “esquites” “helados” y
+                “marquesitas” ¡son deliciosas!</p>
+            <br><p class="info__text__300">Regreso a tu punto de origen, dejada (drop-off) en tu hotel o punto de encuentro
+                inicial.</p>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer__main">
+            <div class="footer__top">
+                <div class="container__footer">
+                    <p> Contactanos </p>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i><p class="info__text__300">toursgomx@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i><p class="info__text__300">(+52) 9983253195</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-map-location-dot"></i><p class="info__text__300">Cancún México, Zona Hotelera</p>
+                    </div>
+                </div>
+                <div class="container__footer">
+                    <p class="title-footer"> Terminos y condiciones</p>
+                    <p class="info__text__300">Terminos y condiciones</p>
+                    <p class="info__text__300">Terminos de servicio</p>
+                </div>
+
+                <div class="container__footer">
+                    <p class="title-footer">Redes sociales</p>
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </div>
+
+
+            </div>
+            <div class="footer__bottom">
+                <p>Derechos reservados</p>
+                <p> 2023 Toursgomx</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/main.js"></script>
+</html>

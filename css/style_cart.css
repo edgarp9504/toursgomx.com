@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/*================= VARIABLES =======================*/
+:root {
+    --color-white: white;
+    --font--size--h2: 2rem;
+    --size--info--small: 8px;
+    --size--info: 12px;
+    --size--title: 1.2rem;
+    --size--details: 15px;
+
+    --color--primary: rgb(227,197,32);
+
+    --font--size--h2--MQ: 1.5rem;
+    --font--size--title--MQ: .7rem;
+    --size--details--MQ: .7rem;
+    --size--info--MQ: 10px;
+    --size--title--MQ: 1rem;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*================= REUTILIZABLE =======================*/
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: var(--font--size--h2);
+}
+.info__text__300{
+    font-weight: 300;
+    font-size: var(--size--details);
+}
+.sub_tittle{
+    font-size: 1.3rem;
+}
+
+i{
+    cursor: pointer;
+}
+
+.info_title{
+    font-size: var(--size--title);
+    font-weight: bold;
+}
+
+/*================= MEDIA QUERY REUTILIZABLE =======================*/
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: var(--font--size--h2--MQ);
+    }
+    .info__text__300{
+        font-size: var(--size--details--MQ);
+    }
+    .info_title{
+        font-size: var(--size--title--MQ);
+    }
+  }
+
+
+  /*================= FIN REUTILIZABLE =======================*/
+
+  section h1{
+    text-align: center;
+  }
+
+  .main__cart__compmra{
+    margin: 5rem 15rem 1rem 15rem;
+  }
+
+  .container__product__cart {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    height: 12rem;
+    align-items: center;
+    border-bottom: 1px solid
+  }
+
+  .container__product__cart img{
+    width: 200px;
+    border-radius: .7rem;
+    border: 1px ;
+  }
+
+
+  .image__product{
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  .information__price{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .card__pre__compra{
+    border: 1px solid;
+    margin: 5rem 15rem 1rem 15rem;
+    padding: 2rem;
+  }
+  .appli__cupon{
+    margin: 1rem 15rem 1rem 15rem;
+  }
+
+  .card__pre__compra .info__text__300{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .appli__cupon input[type="text"]{
+    width: 15rem;
+    padding: .3rem;
+  }
+
+  .appli__cupon input[type="button"]{
+    cursor: pointer;
+    padding: .3rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .appli__cupon input[type="button"]:hover{
+    background-color: aquamarine;
+  }
+
+
+  /*================= MEDIA QUERY SCHEDULE =======================*/
+  @media only screen and (max-width: 1024px) {
+
+  .main__cart__compmra{
+    margin: 1rem;
+  }
+  .card__pre__compra{
+    margin: 1rem;
+  }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .container__product__cart{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .main__cart__compmra{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container__product__cart{
+      height: auto;
+    }
+    .information__price{
+      margin: 0;
+      flex-direction: row;
+      width: 100%;
+    }
+    .information__price .icon__delete{
+      margin-left: auto;
+    }
+    .appli__cupon{
+      text-align: center;
+      margin: 2rem 0rem;
+    }
+  }

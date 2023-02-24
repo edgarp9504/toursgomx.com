@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/*================= VARIABLES =======================*/
+:root {
+    --color-white: white;
+    --font--size--h2: 2rem;
+    --size--info--small: 8px;
+    --size--info: 12px;
+    --size--title: 1.2rem;
+    --size--details: 15px;
+
+    --color--primary: rgb(227,197,32);
+
+    --font--size--h2--MQ: 1.5rem;
+    --font--size--title--MQ: .7rem;
+    --size--details--MQ: .7rem;
+    --size--info--MQ: 10px;
+    --size--title--MQ: 1rem;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*================= REUTILIZABLE =======================*/
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: var(--font--size--h2);
+}
+.info__text__300{
+    font-weight: 300;
+    font-size: var(--size--details);
+}
+.sub_tittle{
+    font-size: 1.3rem;
+}
+
+i{
+    cursor: pointer;
+}
+
+.info_title{
+    font-size: var(--size--title);
+    font-weight: bold;
+}
+
+/*================= MEDIA QUERY REUTILIZABLE =======================*/
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: var(--font--size--h2--MQ);
+    }
+    .info__text__300{
+        font-size: var(--size--details--MQ);
+    }
+    .info_title{
+        font-size: var(--size--title--MQ);
+    }
+  }
+
+
+  /*================= FIN REUTILIZABLE =======================*/
+
+  .main__tour__information{
+    margin: 5rem 10rem 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information__details{
+    background-color: aqua;
+  }
+
+  .background__img{
+    max-height: 600px;
+    width: 100%;
+    display: inline-block;
+  }
+  .background__img img{
+    width: 100%;
+    max-height: 600px;
+    /* height: 300px; */
+    object-fit: cover;
+  }
+
+  .description__tour{
+    width: 600px;
+  }
+
+  .main__card__includes{
+    margin: 5rem 15rem 1rem 15rem;
+  }
+
+  .main__card__includes p{
+    margin-bottom: 2rem;
+  }
+
+  .card__includes{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .container__information{
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0rem 1rem;
+    width: 150px;
+    height: 100px;
+  }
+
+  .Places{
+    margin: 5rem 15rem 1rem 15rem;
+  }
+
+  .main__schedule{
+    margin: 5rem 15rem 1rem 15rem;
+  }
+
+
+  /* INICIO DE TARJETA  */
+
+  .card__precio{
+    display: flex;
+    border: solid 1px #e5e5e5;
+    border-radius: 5px;
+    width: 350px;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .card__precio .info_title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .title__arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arr{
+    display: none;
+  }
+
+  .card__select{
+    padding: 1rem 0rem;
+  }
+
+  .selector__people{
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 900ms ease;
+  }
+
+  .selector__people i{
+    margin-left: auto;
+  }
+
+  .container__selector{
+    position: absolute;
+    background-color: #e5e5e5;
+    display: none;
+    transition: all 800ms ease;
+    width: 18rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+
+  .open{
+    display: block;
+    transition: all 800ms ease;
+  }
+
+  button{
+    cursor: pointer;
+    height: 2rem;
+    width: 100%;
+  }
+
+  .opciones{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  /* FIN DE TARJETA  */
+
+
+  .main__container__information{
+    margin: 5rem 15rem 1rem 15rem;
+  }
+
+  .contenedor{
+    height: 300px;
+  }
+
+  .contenedor ul{
+    list-style:none
+  } 
+
+  .contenedor img{
+    width: 1rem;
+  }
+
+  .contenedor .ul{
+    width: 100%;
+    display: flex;
+  
+  }
+
+  .contenedor .li{
+    background-color: lightgray;
+    padding: 1em;
+    margin: 0 1em 0 0 ;
+    cursor: pointer;
+  }
+
+  .contenedor .li.activo{
+    background-color: lightskyblue;
+    color: white;
+  }
+
+  .contenedor .subcontenedor {
+    background-color: lightcoral;
+    position: relative;
+  }
+
+  .contenedor .bloque{
+    padding: 1em;
+    margin: 1em;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+
+  .contenedor .bloque.activo{
+    opacity: 1;
+  }
+
+  .opciones__schedule{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+  }
+  .opciones__schedule span{
+    padding: .3rem;
+    cursor: pointer;
+  }
+
+  .opciones__schedule span:hover{
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+  /*================= MEDIA QUERY SCHEDULE =======================*/
+  @media only screen and (max-width: 768px) {
+    .main__schedule,.main__container__information,.main__tour__information{
+        margin: 1rem;
+    }
+
+    .card__precio{
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      z-index: 3;
+      top: 90%;
+      left: 0;
+      transition: all 800ms ease;
+    }
+
+    .open_card{
+      height: 100%;
+      top: 0;
+    }
+
+    .arr{
+      display:block;
+      height: 30px;
+      width: 30px;
+      border-top: 8px solid;
+      border-left: 8px solid;
+      transform: rotate(45deg);
+      transition: all 800ms ease;
+    }
+  
+    .down{
+      transform: rotate(225deg);
+    }
+    .contenedor{
+      height: 400px;
+    }
+    .container__information{
+      margin: 1rem;
+    }
+
+    .contenedor .bloque{
+      margin: 0rem;
+    }
+    .Places{
+      margin: 1rem;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 425px) {
+    .description__tour {
+      width: auto;
+  }
+    .contenedor{
+      height: 700px;
+    }
+
+    .card__precio .info_title{
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+

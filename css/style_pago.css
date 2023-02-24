@@ -1,0 +1,52 @@
+.main__pagos{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 10rem 1rem 10rem;
+}
+
+.info__user input,
+.info__user textarea
+{
+    padding: .5rem;
+    width: 100%;
+
+}
+.info__user p{
+    margin: 1rem;
+}
+
+.info__user form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pay{
+    width: 400px;
+}
+
+table{
+    border: 1px solid #CBD5E0;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    border:1px solid #CBD5E0;
+    padding: 1rem;
+}
+th,td{
+    padding: 1rem;
+}
+
+.table__shop{
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.iniciar__session{
+    margin-left: 15rem;
+}

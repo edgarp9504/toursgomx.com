@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/style_cart.css">
+    <link rel="stylesheet" href="../css/style_pago.css">
     <script src="https://kit.fontawesome.com/423d5526c9.js" crossorigin="anonymous"></script>
-    <title>Toursgomx | Carrito </title>
+    <title>Toursgomx | Pagos</title>
 </head>
 <body>
-    
     <div>
         <!-- NAVBAR TOP  -->
         <div class="main_div_contact">
@@ -53,83 +52,86 @@
         </div>             
     </div>
 
-
     <section>
-        
-        <h1> Carrito compra </h1>
-        <div class="main__cart__compmra"> 
-            <div class="container__product__cart">
 
-            
-                <!-- Imagen del producto -->
-                <div class="image__product">
-                    <img src="../img/chichen.jpg" alt="">
-                </div>
+        <h1> Pagos</h1>
+        <div class="iniciar__session">
+            <p>¿Tienes cuenta? <a href=""> Inicia sesion</a></p>
+        </div>
+        <div class="main__pagos">
+            <div class="info__user">
+                <form action="">
+                    <p>
+                        <span> Nombre </span><input type="text">
 
-                <!-- Información del producto -->
-                <div class="information__product">
-                    <p class="info_title">Chichen Itzá Clásico</p>
-                    <p class="info__text__300"> Fecha de actividad: <b> 12 de Febrero del 2023</b></p>
-                    <p class="info__text__300"> Adultos: <button>-</button><b> 3 </b> <button>+</button></p>
-                    <p class="info__text__300"> Menores: <button>-</button><b> 1 </b> <button>+</button></p>
-                    <p class="info__text__300"> Infantil (menores 3 años): <b> 0</b></p>
+                    </p>
+                    <p>
+                        <span>Apellido</span><input type="text">
+                    </p>
+                    <p>
+                        <span>Correo electronico</span><input type="text">
+                    </p>
+                    <p>
+                        <span>Télefono</span><input type="text">
+                    </p>
+                    <p>
+                        <span>Hotel</span><input type="text">
+                    </p>
+                    <p>
+                        <span>País</span><input type="text">
+                    </p>
+                    <p>
+                        <span>Detalles </span><textarea name="" id="" cols="30" rows="10"></textarea>
+                    </p>
 
-                </div>
-                <!-- Información del precio -->
-                <div class="information__price">
-                    <p> $1,100 MXN</p>
-                    <div class="icon__delete">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
+                </form>
             </div>
 
-            <!-- CARD 2  -->
-            <div class="container__product__cart">
+            <div class="pay">
+                <div class="main__price">
+                    <table class="table__shop">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td> <b> Chichen Itza </b>
+                                    <div> 
+                                        <p>Fecha salida</p>
+                                        <p>Adultos: </p>
+                                        <p> Niños</p>
+                                        <p>Menores</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    $1600 MXN
+                                </td>
+                            </tr>
 
-            
-                <!-- Imagen del producto -->
-                <div class="image__product">
-                    <img src="../img/chichen.jpg" alt="">
+                            
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>$1600 MXN</td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
 
-                <!-- Información del producto -->
-                <div class="information__product">
-                    <p class="info_title">Chichen Itzá Clásico</p>
-                    <p class="info__text__300"> Fecha de actividad: <b> 12 de Febrero del 2023</b></p>
-                    <p class="info__text__300"> Adultos: <button>-</button><b> 3 </b> <button>+</button></p>
-                    <p class="info__text__300"> Menores: <button>-</button><b> 1</b> <button>+</button></p>
-                    <p class="info__text__300"> Infantil (menores 3 años): <b> 0</b></p>
-
+                <div class="main__pay">
+                    <p>Paga con paypal</p>
+                    <button class="button">Pagar Paypal</button>
                 </div>
-                <!-- Información del precio -->
-                <div class="information__price">
-                    <p> $1,100 MXN</p>
-                    <div class="icon__delete">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="appli__cupon">
-            <input type="text">
-            <input type="button" value="Aplicar cupon">
-        </div>
-
-        <div class="card__pre__compra"> 
-            <p class="info__text__300"> !Estás a un paso de vivir la experiencia¡</p>
-            <p>Subtotal: $1,300 MXN </p> 
-            <p class="info_title">Total (incluye IVA): $1,300 MXN </p>   
-            <div class="button__pay">
-                <div class="bottom-more">
-                    <a href="./pago.html"><button>Pagar</button></a>
-                </div>
+                
             </div>
         </div>
     </section>
-
 
     <footer>
         <div class="footer__main">
@@ -167,5 +169,5 @@
         </div>
     </footer>
 </body>
-    <script src="../js/main.js"></script>
+<script src="../js/main.js"></script>
 </html>
